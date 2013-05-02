@@ -1,0 +1,55 @@
+set guioptions=egmt
+filetype plugin indent on
+
+" vim-only mode.
+set nocompatible
+"set mouse=
+
+" highlight trailing whitespace
+set list listchars=trail:·,tab:>-
+
+set syntax=on
+
+" backups and swapfiles
+set nobackup
+set noswapfile
+
+try
+  " persistent undo
+  set undodir=~/.vim/undodir
+  set undofile
+
+  set colorcolumn=85
+catch /Unknown option/
+  " For versions of Vim prior to 7.3.
+endtry
+
+" 2 spaces for tabs.
+set autoindent
+set smartindent
+set softtabstop=2
+set shiftwidth=2
+set tabstop=4
+set expandtab
+set nosmarttab
+
+" sensible backspace behaviour
+set backspace=2
+
+" use ack instead of grep
+set grepprg=ack
+set grepformat=%f:%l:%m
+
+" ui
+set ruler
+set noshowcmd
+set nolazyredraw
+set number
+set nostartofline
+set cursorline
+set showmatch
+set virtualedit=block
+
+" searching
+set hlsearch
+set incsearch

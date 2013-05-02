@@ -1,0 +1,23 @@
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Version control
+Bundle 'tpope/vim-fugitive'
+Bundle 'gregsexton/gitv'
+
+" Autocompletion
+Bundle 'Shougo/neocomplcache'
+
+" Resource Navigation
+Bundle 'scrooloose/nerdtree'
+
+" Fuzzy search
+Bundle 'kien/ctrlp.vim'
+
+" Formatting
+Bundle 'tpope/vim-commentary'
+Bundle 'godlygeek/tabular'
+
+" Code navigation
+Bundle 'Lokaltog/vim-easymotion'
+
