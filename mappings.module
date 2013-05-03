@@ -26,6 +26,7 @@ nnoremap <leader>tp :tabprevious<CR>
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gp :Git push<CR>
+nnoremap <leader>gpl :Git push<CR>
 
 " View modification
 nnoremap <leader>ln :set nu<CR>
