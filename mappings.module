@@ -27,3 +27,6 @@ nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gp :Git push<CR>
 
+" View modification
+nnoremap <leader>ln :set nu<CR>
+nnoremap <leader>lnn :set nonu<CR>
