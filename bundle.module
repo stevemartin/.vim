@@ -20,4 +20,5 @@ Bundle 'godlygeek/tabular'
 
 " Code navigation
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-cucumber'
 

@@ -1,6 +1,7 @@
 let mapleader = "\\"
 " File navigation
 nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap <leader>p :CtrlP<CR>
 
 " Vim admin
@@ -21,13 +22,21 @@ nnoremap <leader>fpf :NERDTreeClose<CR>:cpf<CR>:NERDTreeFind<CR><C-w>l
 nnoremap <leader>tN :tabnew<CR>
 nnoremap <leader>tn :tabnext<CR>
 nnoremap <leader>tp :tabprevious<CR>
+nnoremap <leader>q :q<CR>
 
 " Git mappings
 nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gp :Git push<CR>
 nnoremap <leader>gpl :Git push<CR>
 
 " View modification
-nnoremap <leader>ln :set nu<CR>
-nnoremap <leader>lnn :set nonu<CR>
+nnoremap <leader>nu :set nu<CR>
+nnoremap <leader>nnu :set nonu<CR>
+
+nnoremap <leader>sp :set paste<CR>
+nnoremap <leader>snp :set nopaste<CR>
+
+" Code traversal
+nnoremap <leader>tg :!ctags -R --exclude=.git --exclude=log * `echo $GEM_HOME`/gems/*<CR>
