@@ -1,6 +1,12 @@
 set guioptions=egmt
 filetype plugin indent on
 
+"folding
+set foldmethod=syntax
+set foldlevelstart=1
+
+let javaScript_fold=1
+
 " vim-only mode.
 set nocompatible
 "set mouse=
@@ -8,7 +14,7 @@ set nocompatible
 " highlight trailing whitespace
 set list listchars=trail:·,tab:>-
 
-set syntax=on
+syntax on
 
 " backups and swapfiles
 set nobackup

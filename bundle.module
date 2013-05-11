@@ -1,6 +1,11 @@
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Code navigation
+Bundle 'tpope/vim-cucumber'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'nelstrom/vim-visual-star-search'
+
 " Version control
 Bundle 'tpope/vim-fugitive'
 Bundle 'gregsexton/gitv'
@@ -18,7 +23,4 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'godlygeek/tabular'
 
-" Code navigation
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-cucumber'
 
