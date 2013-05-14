@@ -12,6 +12,8 @@ Bundle 'gregsexton/gitv'
 
 " Autocompletion
 Bundle 'Shougo/neocomplcache'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-endwise'
 
 " Resource Navigation
 Bundle 'scrooloose/nerdtree'
@@ -22,5 +24,6 @@ Bundle 'kien/ctrlp.vim'
 " Formatting
 Bundle 'tpope/vim-commentary'
 Bundle 'godlygeek/tabular'
+
 
 
