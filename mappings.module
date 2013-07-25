@@ -3,6 +3,8 @@ let mapleader = "\\"
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>pm :CtrlPMRU<CR>
+nnoremap <leader>b :buffers<CR>
 
 " Vim admin
 nnoremap <leader>so :source ~/.vimrc<CR>
@@ -10,6 +12,7 @@ nnoremap <leader>ev :e ~/.vimrc<CR>
 nnoremap <leader>es :e ~/.vim/settings.module<CR>
 nnoremap <leader>em :e ~/.vim/mappings.module<CR>
 nnoremap <leader>eb :e ~/.vim/bundle.module<CR>
+nnoremap <leader>ere :e ~/.vim/regex.module<CR>
 
 " File navigation
 nnoremap <leader>co :copen<CR>
@@ -25,6 +28,7 @@ nnoremap <leader>fnf :NERDTreeClose<CR>:cnf<CR>:NERDTreeFind<CR><C-w>l
 nnoremap <leader>fp :NERDTreeClose<CR>:cp<CR>:NERDTreeFind<CR><C-w>l
 nnoremap <leader>fpf :NERDTreeClose<CR>:cpf<CR>:NERDTreeFind<CR><C-w>l
 nnoremap <leader>w :w<CR>
+nnoremap <leader>wq :wq<CR>
 
 " Tab navigation
 nnoremap <leader>tN :tabnew<CR>
@@ -38,6 +42,7 @@ nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gp :Git push<CR>
 nnoremap <leader>gpl :Git push<CR>
+nnoremap <leader>ga% :Git add %<CR>
 
 " View modification
 nnoremap <leader>nu :set nu<CR>
