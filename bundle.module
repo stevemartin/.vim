@@ -1,6 +1,8 @@
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'gmarik/vundle'
+
 " Code navigation
 Bundle 'tpope/vim-cucumber'
 Bundle 'Lokaltog/vim-easymotion'
@@ -12,18 +14,32 @@ Bundle 'gregsexton/gitv'
 
 " Autocompletion
 Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/vimshell'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-endwise'
 
 " Resource Navigation
 Bundle 'scrooloose/nerdtree'
+Bundle 'vim-scripts/buflist'
 
-" Fuzzy search
+" Search
 Bundle 'kien/ctrlp.vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'tyok/nerdtree-ack'
 
 " Formatting
 Bundle 'tpope/vim-commentary'
 Bundle 'godlygeek/tabular'
 
+" Javascript
+Bundle 'pangloss/vim-javascript'
 
+" Ruby
+Bundle 'vim-ruby/vim-ruby'
 
+" SVG
+Bundle 'vim-scripts/svg.vim'
+
+" Shortcuts
+" Bundle 'msanders/snipmate.vim'
+Bundle 'Shougo/neosnippet'
