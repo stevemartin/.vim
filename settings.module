@@ -16,6 +16,13 @@ set list listchars=trail:·,tab:>-
 
 syntax on
 
+" strip white space
+autocmd BufWritePre * :call <SID>StripWhite()
+fun! <SID>StripWhite()
+    %s/[ \t]\+$//ge
+    %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
+endfun
+
 " backups and swapfiles
 set nobackup
 set noswapfile
@@ -60,7 +67,21 @@ set virtualedit=block
 set hlsearch
 set incsearch
 
-" neocompcache autocompletion
+set wildignore+=**/tmp/**
+set wildignore+=**/cache/**
+set wildignore+=**/log/**
+
+set path-=tmp/
+set path-=cache/
+set path-=log/
+
+" Status line
+" set statusline=%F%m%r%h%w\
+" set statusline+=%{fugitive#statusline()}\
+" set statusline+=[%{strlen(&fenc)?&fenc:&enc}]
+" set statusline+=\ [line\ %l\/%L]
+
+" NEOCOMPCACHE AUTOCOMPLETION
 
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
@@ -80,6 +101,8 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 "let g:neocomplcache_enable_underbar_completion = 1
 
 " Define dictionary.
+set dictionary='/usr/share/dict/words'
+
 let g:neocomplcache_dictionary_filetype_lists = {
     \ 'default' : '',
     \ 'vimshell' : $HOME.'/.vimshell_hist',
@@ -151,3 +174,24 @@ let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+" NEOSNIPPET
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" END NEOCOMPCACHE AUTOCOMPLETION
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: "\<TAB>"
+
+" For snippet_complete marker.
+if has('conceal')
+    set conceallevel=2 concealcursor=i
+    endif
