@@ -4,12 +4,14 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " UI
-Bundle 'bling/vim-airline'
+" Bundle 'bling/vim-airline'
+" Bundle 'altercation/solarized'
 
 " Code navigation
-Bundle 'tpope/vim-cucumber'
+" Bundle 'tpope/vim-cucumber'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'nelstrom/vim-visual-star-search'
+Bundle 'tsaleh/vim-matchit'
 
 " Version control
 Bundle 'tpope/vim-fugitive'
@@ -17,14 +19,18 @@ Bundle 'gregsexton/gitv'
 Bundle 'airblade/vim-gitgutter'
 
 " Autocompletion
-Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neocomplete'
+Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
 Bundle 'Shougo/vimshell'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-endwise'
+Bundle 'file:///Users/stevemartin/Projects/emmet-vim'
 
 " Resource Navigation
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/buflist'
+Bundle 'vim-scripts/LustyJuggler'
 
 " Search
 Bundle 'kien/ctrlp.vim'
@@ -37,11 +43,17 @@ Bundle 'godlygeek/tabular'
 
 " Javascript
 Bundle 'pangloss/vim-javascript'
+Bundle 'file:///Users/stevemartin/Projects/angular.vim'
+" Bundle 'stevemartin/angular.vim'
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'ngmy/vim-rubocop'
+Bundle 'ecomba/vim-ruby-refactoring'
+
+" Data
+Bundle 'vim-scripts/dbext.vim'
 
 " SVG
 Bundle 'vim-scripts/svg.vim'
@@ -53,3 +65,15 @@ Bundle 'Shougo/neosnippet'
 " Editing
 Bundle 'sjl/gundo.vim'
 Bundle 'kana/vim-fakeclip'
+Bundle 'tpope/vim-surround'
+
+" Testing
+Bundle 'h1mesuke/vim-unittest'
+Bundle 'kana/vim-vspec'
+
+" Windowing
+Bundle 'benmills/vimux'
+
+" Utility
+Bundle 'Shougo/vimproc'
+" Bundle 'Shougo/context_filetype'
