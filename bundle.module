@@ -2,6 +2,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+Bundle 'kchmck/vim-coffee-script'
 
 " UI
 " Bundle 'bling/vim-airline'
@@ -12,6 +13,10 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'tsaleh/vim-matchit'
+
+" Registers
+" Bundle 'vim-scripts/YankRing.vim'
+Bundle 'kana/vim-fakeclip'
 
 " Version control
 Bundle 'tpope/vim-fugitive'
@@ -64,7 +69,6 @@ Bundle 'Shougo/neosnippet'
 
 " Editing
 Bundle 'sjl/gundo.vim'
-Bundle 'kana/vim-fakeclip'
 Bundle 'tpope/vim-surround'
 
 " Testing

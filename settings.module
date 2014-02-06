@@ -1,6 +1,11 @@
 set guioptions=egmt
 filetype plugin indent on
 
+" TMUX Clipboard
+if $TMUX == ''
+  set clipboard+=unnamed
+endif
+
 "folding
 set foldmethod=syntax
 set foldlevelstart=1
@@ -16,7 +21,6 @@ set nocompatible
 " highlight trailing whitespace
 set list listchars=trail:·,tab:>-
 
-syntax on
 
 " strip white space
 autocmd BufWritePre * :call <SID>StripWhite()
@@ -24,6 +28,8 @@ fun! <SID>StripWhite()
     %s/[ \t]\+$//ge
     %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
 endfun
+
+autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
 " nerdtree
 let NERDTreeShowHidden=1
@@ -234,3 +240,5 @@ function! AirlineThemePatch(palette)
     endfor
   endif
 endfunction
+
+syntax enable
