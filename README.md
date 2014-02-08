@@ -13,4 +13,4 @@ git submodule update
 ln -s ~/.vim/vimrc .vimrc
 vi
 
-:BundleInstall<cr>
+:BundleInstall\<cr\>
