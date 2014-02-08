@@ -1,6 +1,8 @@
 .vim
 ====
 
+# NOTE - this setup requires vim 7.4 with lua enabled
+
 cd ~
 git clone git@github.com:stevemartin/.vim
 
