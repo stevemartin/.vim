@@ -1,10 +1,14 @@
 .vim
 ====
 
+cd ~
+git clone git@github.com:stevemartin/.vim
+
+cd ~/.vim
+git submodule init
+git submodule update
+
 ln -s ~/.vim/vimrc .vimrc
-
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
 vi
 
 :BundleInstall
