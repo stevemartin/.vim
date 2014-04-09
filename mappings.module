@@ -47,9 +47,8 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>wq :wq<CR>
 
 " Tab navigation
-nnoremap <leader>tN :tabnew<CR>
-nnoremap <leader>tn :tabnext<CR>
-nnoremap <leader>tp :tabprevious<CR>
+nnoremap <leader>t :tabnew<CR>
+nnoremap <leader>tc :tabclose<CR>
 nnoremap <leader>q :q<CR>
 
 " Git mappings
