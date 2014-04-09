@@ -8,8 +8,15 @@ nnoremap <leader>shash :%s/'\([^ ]*\)\(\s*\)'\s*=>/\1:/g<CR>
 
 "camelize
 nnoremap <leader>u /\w\+_<CR>
-nnoremap <leader>c f_x~
+nnoremap <leader>c f_b~f_x~ " camel case
+nnoremap <leader>vcj ve:s/\%V_\(\w\)/\U\1/g<CR><ESC>e " visual camelcase word javascript :   s/_\(\w\)/\U\1/g
+nnoremap <leader>vcc ~ve:s/\%V_\(\w\)/\U\1/g<CR><ESC>e " visual camelcase word :   s/_\(\w\)/\U\1/g
+nnoremap <leader>jc f_x~ " javascript camel case
+nnoremap <leader>vsn vuve:s/\%V\([A-Z]\)/_\L\1/g<CR><ESC>e " visual snake case
 nnoremap <leader>uu /\u<CR>~hi_<esc>
+
+" snake_case_times_three.snake_case_times_four_things
+" CamelCaseTimesThree.camelCaseTimesFourThings
 
 " Vim admin
 nnoremap <leader>so :source ~/.vimrc<CR>
