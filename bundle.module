@@ -6,7 +6,8 @@ Bundle 'kchmck/vim-coffee-script'
 
 " UI
 " Bundle 'bling/vim-airline'
-" Bundle 'altercation/solarized'
+Bundle 'altercation/solarized'
+Bundle 'flazz/vim-colorschemes'
 
 " Code navigation
 " Bundle 'tpope/vim-cucumber'
@@ -53,6 +54,7 @@ Bundle 'file:///Users/stevemartin/Projects/angular.vim'
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-rails'
 Bundle 'ngmy/vim-rubocop'
 Bundle 'ecomba/vim-ruby-refactoring'

@@ -1,6 +1,7 @@
 set guioptions=egmt
 filetype plugin indent on
 
+
 " TMUX Clipboard
 if $TMUX == ''
   set clipboard+=unnamed
@@ -75,15 +76,12 @@ set showmatch
 set virtualedit=block
 "set background=dark
 "colorscheme solarized
-colorscheme slate
 
 " searching
 set hlsearch
 set incsearch
 
-set wildignore+=**/tmp/**
-set wildignore+=**/cache/**
-set wildignore+=**/log/**
+set wildignore+=tmp/**,cache/**,log/**
 
 set path-=tmp/
 set path-=cache/
@@ -232,13 +230,13 @@ endif
 
 " END NEOSNIPPET
 
-let g:airline_theme_patch_func = 'AirlineThemePatch'
-function! AirlineThemePatch(palette)
-  if g:airline_theme == 'badwolf'
-    for colors in values(a:palette.inactive)
-      let colors[3] = 245
-    endfor
-  endif
-endfunction
+" let g:airline_theme_patch_func = 'AirlineThemePatch'
+" function! AirlineThemePatch(palette)
+"   if g:airline_theme == 'badwolf'
+"     for colors in values(a:palette.inactive)
+"       let colors[3] = 245
+"     endfor
+"   endif
+" endfunction
 
 syntax enable
