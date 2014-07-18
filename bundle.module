@@ -1,85 +1,88 @@
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-Bundle 'gmarik/vundle'
-Bundle 'kchmck/vim-coffee-script'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/vundle'
+Plugin 'kchmck/vim-coffee-script'
 
 " UI
-" Bundle 'bling/vim-airline'
-Bundle 'altercation/solarized'
-Bundle 'flazz/vim-colorschemes'
+" Plugin 'bling/vim-airline'
+Plugin 'altercation/solarized'
+Plugin 'flazz/vim-colorschemes'
 
 " Code navigation
-" Bundle 'tpope/vim-cucumber'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'nelstrom/vim-visual-star-search'
-Bundle 'tsaleh/vim-matchit'
+" Plugin 'tpope/vim-cucumber'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'nelstrom/vim-visual-star-search'
+Plugin 'tsaleh/vim-matchit'
+Plugin 'terryma/vim-multiple-cursors'
 
 " Registers
-" Bundle 'vim-scripts/YankRing.vim'
-Bundle 'kana/vim-fakeclip'
+" Plugin 'vim-scripts/YankRing.vim'
+Plugin 'kana/vim-fakeclip'
 
 " Version control
-Bundle 'tpope/vim-fugitive'
-Bundle 'gregsexton/gitv'
-Bundle 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'gregsexton/gitv'
+Plugin 'airblade/vim-gitgutter'
 
 " Autocompletion
-Bundle 'Shougo/neocomplete'
-Bundle 'Shougo/neosnippet'
-Bundle 'Shougo/neosnippet-snippets'
-Bundle 'Shougo/vimshell'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-endwise'
-Bundle 'file:///Users/stevemartin/Projects/emmet-vim'
+Plugin 'Shougo/neocomplete'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'Shougo/vimshell'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-endwise'
+Plugin 'file:///Users/stevemartin/Projects/emmet-vim'
 
 " Resource Navigation
-Bundle 'scrooloose/nerdtree'
-Bundle 'vim-scripts/buflist'
-Bundle 'vim-scripts/LustyJuggler'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/buflist'
+Plugin 'vim-scripts/LustyJuggler'
 
 " Search
-Bundle 'kien/ctrlp.vim'
-Bundle 'mileszs/ack.vim'
-Bundle 'tyok/nerdtree-ack'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'tyok/nerdtree-ack'
 
 " Formatting
-Bundle 'tpope/vim-commentary'
-Bundle 'godlygeek/tabular'
+Plugin 'tpope/vim-commentary'
+Plugin 'godlygeek/tabular'
 
 " Javascript
-Bundle 'pangloss/vim-javascript'
-Bundle 'file:///Users/stevemartin/Projects/angular.vim'
-" Bundle 'stevemartin/angular.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'file:///Users/stevemartin/Projects/angular.vim'
+" Plugin 'stevemartin/angular.vim'
 
 " Ruby
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rvm'
-Bundle 'tpope/vim-rails'
-Bundle 'ngmy/vim-rubocop'
-Bundle 'ecomba/vim-ruby-refactoring'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rvm'
+Plugin 'tpope/vim-rails'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'ecomba/vim-ruby-refactoring'
 
 " Data
-Bundle 'vim-scripts/dbext.vim'
+Plugin 'vim-scripts/dbext.vim'
 
 " SVG
-Bundle 'vim-scripts/svg.vim'
-
-" Shortcuts
-" Bundle 'msanders/snipmate.vim'
-Bundle 'Shougo/neosnippet'
+Plugin 'vim-scripts/svg.vim'
 
 " Editing
-Bundle 'sjl/gundo.vim'
-Bundle 'tpope/vim-surround'
+Plugin 'sjl/gundo.vim'
+Plugin 'tpope/vim-surround'
 
 " Testing
-Bundle 'h1mesuke/vim-unittest'
-Bundle 'kana/vim-vspec'
+Plugin 'h1mesuke/vim-unittest'
+Plugin 'kana/vim-vspec'
 
 " Windowing
-Bundle 'benmills/vimux'
+Plugin 'benmills/vimux'
 
 " Utility
-Bundle 'Shougo/vimproc'
-" Bundle 'Shougo/context_filetype'
+Plugin 'Shougo/vimproc'
+" Plugin 'Shougo/context_filetype'
+
+call vundle#end()
+filetype plugin indent on

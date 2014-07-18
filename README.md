@@ -11,6 +11,7 @@ git submodule init
 git submodule update
 
 ln -s ~/.vim/vimrc .vimrc
+ln -s ~/.vim/vimshrc .vimshrc
 vi
 
 :BundleInstall\<cr\>

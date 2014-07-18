@@ -78,6 +78,7 @@ nnoremap <leader>sp :set paste<CR>
 nnoremap <leader>snp :set nopaste<CR>
 
 " Code traversal
+nnoremap <leader>tgj :!/usr/local/bin/ctags -R --exclude=.git --exclude=log * ~/.npm/*<CR>
 nnoremap <leader>tg :!/usr/local/bin/ctags -R --exclude=.git --exclude=log * `echo $GEM_HOME`/gems/*<CR>
 imap ;; <Esc>l
 

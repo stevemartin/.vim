@@ -1,0 +1,12 @@
+alias gs='git status'
+alias gco='git checkout'
+alias gb='git branch'
+alias gpl='git pull'
+alias gp='git push'
+alias gr='git rebase'
+alias gl='git log'
+alias gbl='git blame'
+alias gcp='git cherry-pick'
+alias gsh='git show'
+
+alias hs='history | grep'
