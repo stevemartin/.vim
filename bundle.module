@@ -16,7 +16,7 @@ Plugin 'flazz/vim-colorschemes'
 " Plugin 'tpope/vim-cucumber'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'nelstrom/vim-visual-star-search'
-Plugin 'tsaleh/vim-matchit'
+Plugin 'vim-scripts/matchit.zip'
 Plugin 'terryma/vim-multiple-cursors'
 
 " Registers
