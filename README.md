@@ -13,10 +13,10 @@
 
 `git submodule update`
 
-`ln -s ~/.vim/vimrc .vimrc`
+`ln -s ~/.vim/vimrc ~/.vimrc`
 
-`ln -s ~/.vim/vimshrc .vimshrc`
+`ln -s ~/.vim/vimshrc ~/.vimshrc`
 
 `vi`
 
-`:BundleInstall<CR>`
+`:PluginInstall<CR>`

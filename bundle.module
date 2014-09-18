@@ -35,7 +35,8 @@ Plugin 'Shougo/neosnippet-snippets'
 Plugin 'Shougo/vimshell'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-endwise'
-Plugin 'file:///Users/stevemartin/Projects/emmet-vim'
+Plugin 'mattn/emmet-vim'
+" Plugin 'file:///Users/stevemartin/Projects/emmet-vim'
 
 " Resource Navigation
 Plugin 'scrooloose/nerdtree'
@@ -53,8 +54,8 @@ Plugin 'godlygeek/tabular'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
-Plugin 'file:///Users/stevemartin/Projects/angular.vim'
-" Plugin 'stevemartin/angular.vim'
+" Plugin 'file:///Users/stevemartin/Projects/angular.vim'
+Plugin 'stevemartin/angular.vim'
 
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
