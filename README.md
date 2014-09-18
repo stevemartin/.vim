@@ -3,20 +3,20 @@
 
 ### NOTE - this setup requires vim 7.4 with lua enabled
 
-cd ~
+`cd ~`
 
-git clone git@github.com:stevemartin/.vim
+`git clone git@github.com:stevemartin/.vim`
 
-cd ~/.vim
+`cd ~/.vim`
 
-git submodule init
+`git submodule init`
 
-git submodule update
+`git submodule update`
 
-ln -s ~/.vim/vimrc .vimrc
+`ln -s ~/.vim/vimrc .vimrc`
 
-ln -s ~/.vim/vimshrc .vimshrc
+`ln -s ~/.vim/vimshrc .vimshrc`
 
-vi
+`vi`
 
-:BundleInstall\<cr\>
+`:BundleInstall\<cr\>`
