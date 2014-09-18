@@ -19,4 +19,4 @@
 
 `vi`
 
-`:BundleInstall\<cr\>`
+`:BundleInstall<CR>`
