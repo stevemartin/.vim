@@ -1,10 +1,17 @@
 let mapleader = "\\"
 " Text editing
 nnoremap <leader>un :GundoToggle<CR>
-nnoremap <leader>hash :%s/:\([^ ]*\)\(\s*\)=>/\1:/g \| :%s/"\([^ ]*\)\(\s*\)"\s*=>/\1:/g \| :%s/'\([^ ]*\)\(\s*\)'\s*=>/\1:/g<CR>
-nnoremap <leader>syhash :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
-nnoremap <leader>dhash :%s/"\([^ ]*\)\(\s*\)"\s*=>/\1:/g<CR>
-nnoremap <leader>shash :%s/'\([^ ]*\)\(\s*\)'\s*=>/\1:/g<CR>
+nnoremap <leader>hsh :s/:\([^ ]*\)\(\s*\)=>/\1:/g \| :s/"\([^ ]*\)\(\s*\)"\s*=>/\1:/g \| :s/'\([^ ]*\)\(\s*\)'\s*=>/\1:/g<CR>
+nnoremap <leader>syhsh :s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
+nnoremap <leader>dhsh :s/"\([^ ]*\)\(\s*\)"\s*=>/\1:/g<CR>
+nnoremap <leader>shsh :s/'\([^ ]*\)\(\s*\)'\s*=>/\1:/g<CR>
+
+" { :thing => 1,
+"   'thing' => 1,
+"   :thing => 1,
+"   "thing" => 1,
+"   :thing => { 'bing' => 2, :bing => 2, "bing" => 2},
+"   :thing => 1 }
 
 "camelize
 nnoremap <leader>u /\w\+_<CR>
