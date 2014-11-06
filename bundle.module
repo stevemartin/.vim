@@ -8,7 +8,7 @@ Plugin 'gmarik/vundle'
 Plugin 'kchmck/vim-coffee-script'
 
 " UI
-" Plugin 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 Plugin 'altercation/solarized'
 Plugin 'flazz/vim-colorschemes'
 
