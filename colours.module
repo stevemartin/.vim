@@ -1,4 +1,4 @@
 highlight DiffAdd cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=SeaGreen1
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=DeepPink3
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=White guibg=DarkBlue
-highlight DiffAdd cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Gold
+highlight DiffAdd cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Yellow4
