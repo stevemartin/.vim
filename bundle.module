@@ -9,7 +9,6 @@ Plugin 'kchmck/vim-coffee-script'
 
 " UI
 Plugin 'bling/vim-airline'
-Plugin 'altercation/solarized'
 Plugin 'flazz/vim-colorschemes'
 
 " Code navigation
@@ -30,9 +29,10 @@ Plugin 'gregsexton/gitv'
 Plugin 'airblade/vim-gitgutter'
 
 " Autocompletion
-Plugin 'Shougo/neocomplete'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
+Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Shougo/neocomplete'
+" Plugin 'Shougo/neosnippet'
+" Plugin 'Shougo/neosnippet-snippets'
 Plugin 'Shougo/vimshell'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-endwise'
@@ -42,7 +42,7 @@ Plugin 'mattn/emmet-vim'
 " Resource Navigation
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/buflist'
-Plugin 'vim-scripts/LustyJuggler'
+" Plugin 'vim-scripts/LustyJuggler'
 
 " Search
 Plugin 'kien/ctrlp.vim'
@@ -76,11 +76,11 @@ Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-surround'
 
 " Testing
-Plugin 'h1mesuke/vim-unittest'
-Plugin 'kana/vim-vspec'
+" Plugin 'h1mesuke/vim-unittest'
+" Plugin 'kana/vim-vspec'
 
 " Windowing
-Plugin 'benmills/vimux'
+" Plugin 'benmills/vimux'
 
 " Utility
 Plugin 'Shougo/vimproc'
