@@ -3,3 +3,9 @@ au BufRead,BufNewFile Berksfile set filetype=ruby
 
 autocmd FileType apache set commentstring=#\ %s
 autocmd BufNewFile,BufRead *.module set commentstring=\"\ %s
+
+au FileType python setl sw=2 sts=2 et
+au FileType ruby setl sw=2 sts=2 et
+au FileType css setl sw=4 sts=4 ts=4 et
+au FileType less setl sw=4 sts=4 ts=4 et
+au FileType javascript setl sw=4 sts=4 ts=4 et

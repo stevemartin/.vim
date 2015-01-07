@@ -52,6 +52,7 @@ Plugin 'tyok/nerdtree-ack'
 " Formatting
 Plugin 'tpope/vim-commentary'
 Plugin 'godlygeek/tabular'
+Plugin 'groenewege/vim-less'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
