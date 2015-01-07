@@ -16,7 +16,9 @@ let g:ctrlp_follow_symlinks = 2
 
 " vim-only mode.
 set nocompatible
+
 "set mouse=
+set mouse=nvi
 
 " highlight trailing whitespace
 set list listchars=trail:·,tab:>-
