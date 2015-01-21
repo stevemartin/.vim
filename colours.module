@@ -1,3 +1,7 @@
+colorscheme 256-grayvim
+colorscheme Tomorrow
+colorscheme Tomorrow-Night
+
 highlight DiffAdd cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=SeaGreen1
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=DeepPink3
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=White guibg=DarkBlue
