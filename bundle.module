@@ -29,8 +29,8 @@ Plugin 'gregsexton/gitv'
 Plugin 'airblade/vim-gitgutter'
 
 " Autocompletion
-Plugin 'Valloric/YouCompleteMe'
-" Plugin 'Shougo/neocomplete'
+" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/neocomplete'
 " Plugin 'Shougo/neosnippet'
 " Plugin 'Shougo/neosnippet-snippets'
 Plugin 'Shougo/vimshell'
