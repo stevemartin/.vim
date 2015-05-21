@@ -46,8 +46,10 @@ Plugin 'vim-scripts/buflist'
 
 " Search
 Plugin 'kien/ctrlp.vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'tyok/nerdtree-ack'
+" Plugin 'mileszs/ack.vim'
+" Plugin 'tyok/nerdtree-ack'
+Plugin 'rking/ag.vim'
+Plugin 'taiansu/nerdtree-ag'
 
 " Formatting
 Plugin 'tpope/vim-commentary'
