@@ -59,6 +59,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
 " Plugin 'file:///Users/stevemartin/Projects/angular.vim'
 Plugin 'stevemartin/angular.vim'
+Plugin 'othree/yajs.vim'
 
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
