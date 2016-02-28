@@ -4,7 +4,7 @@ filetype off                  " required
 set rtp+=~/.vim/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle'
 Plugin 'kchmck/vim-coffee-script'
 
 " UI
@@ -27,6 +27,7 @@ Plugin 'kana/vim-fakeclip'
 Plugin 'tpope/vim-fugitive'
 Plugin 'gregsexton/gitv'
 Plugin 'airblade/vim-gitgutter'
+" Plugin 'rickhowe/diffchar.vim'
 
 " Autocompletion
 " Plugin 'Valloric/YouCompleteMe'
