@@ -1,5 +1,7 @@
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
 au BufRead,BufNewFile Berksfile set filetype=ruby
+au BufRead,BufNewFile *.js.erb set filetype=javascript
+au BufRead,BufNewFile *.mustache set filetype=html
 
 autocmd FileType apache set commentstring=#\ %s
 autocmd BufNewFile,BufRead *.module set commentstring=\"\ %s

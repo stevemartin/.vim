@@ -62,8 +62,8 @@ set nosmarttab
 " sensible backspace behaviour
 set backspace=2
 
-" use ack instead of grep
-set grepprg=ack
+" use ag instead of grep
+set grepprg=ag
 set grepformat=%f:%l:%m
 
 " ui
